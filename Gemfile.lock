@@ -125,6 +125,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-theme-hacker (0.0.4)
       jekyll (~> 3.3)
+    jekyll-theme-hyde (2.0.0)
+      jekyll (~> 3.3)
     jekyll-theme-leap-day (0.0.4)
       jekyll (~> 3.3)
     jekyll-theme-merlot (0.0.4)
@@ -201,6 +203,7 @@ DEPENDENCIES
   github-pages
   jekyll (= 3.5.1)
   jekyll-feed (~> 0.6)
+  jekyll-theme-hyde (~> 2.0)
   jekyll-theme-minimal (~> 0.0.4)
   minima (~> 2.0)
   tzinfo-data

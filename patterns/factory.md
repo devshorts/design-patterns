@@ -94,10 +94,10 @@ The power of a factory comes in providing sane and semantic ways of creating com
 
 ```scala
 trait HouseFactory {
-  def bedroom(size: Dimensions): Room
-  def bathroom(size: Dimensions): Room
-  def kithen(size: Dimensions): Room
-  def living(size: Dimensions): Room
+  def bedroom(): Room
+  def bathroom(): Room
+  def kithen(): Room
+  def living(): Room
 }
 ```
 
@@ -110,27 +110,27 @@ class FancyHouseFactory extends HouseFactory {
   val huge = Dimensions(1000, 1000)
   
   // two beds, two sinks
-  def bedroom(size: Dimensions = huge): Room = {
-    Room(size, features = List(
+  def bedroom: Room = {
+    Room(size = huge, features = List(
       Bed, Bed, Dresser, Sink, Sink
     ))
   }
    
-  def bathroom(size: Dimensions = huge): Room = {
-    Room(size, features = List(
+  def bathroom: Room = {
+    Room(size = huge, features = List(
       Sink, Sink, Couch, Tv
     ))
   }
   
-  def kithen(size: Dimensions = huge): Room = {
-    Room(size, features = List(
+  def kithen: Room = {
+    Room(size = huge, features = List(
         Sink, Sink, Stove, Stove, Tv
       ))
     }
   }
   
-  def living(size: Dimensions = huge): Room = {
-    Room(size, features = List(
+  def living: Room = {
+    Room(size = huge, features = List(
         Butler, Tv, Couch, Couch
       ))
     }

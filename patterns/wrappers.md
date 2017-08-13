@@ -102,7 +102,7 @@ class MonitoringStateProxy(state: State) extends State {
   override def remove(key: String): Unit = {
     monitor.increment("remove")
       
-    map.remove(key)
+    state.remove(key)
   }
 }
 ```
