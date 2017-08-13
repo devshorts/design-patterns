@@ -189,17 +189,9 @@ And you have some code that takes a `Dog`.  But lets say you only have a `Cat` l
 ```scala
 class CatLikeDog(cat: Cat) extends Dog {
   def bark(): AudioStream = {  
-    subSample(cat.meow())
-  }
-  
-  private def subSample(stream: AudioStream): AudioStream = {
-     // samples the stream and increases the low frequencyies
-     // lowers the high frequencies, and introduce some noise 
-     // to make tinny meows sound like big beefy growls
-     
-     ...
+    cat.meow()
   }
 }
 ```
 
-Ok, I will admit this isn't a great example, a cat isn't a dog. But... we kind of did just fake it right? If we can make a meow sound like a growl, it can pass as a dog! The idea behind an adapter is to do provide the adaptation mechanism to allow an object to behave like something its not. In a non trivial example the adapter may take several other classes and utilities that help it achieve its goal.  
+Ok, I will admit this isn't a great example, a cat isn't a dog. But... it can pass as a dog (albeit a weirdly meowing one)! The idea behind an adapter is to do provide the adaptation mechanism to allow an object to behave like something it's not. In a non trivial example the adapter may take several other classes and utilities that help it achieve its goal.  
