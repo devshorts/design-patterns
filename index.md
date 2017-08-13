@@ -10,6 +10,6 @@ Some claim that design patterns are a smell, that they are used to cover up wart
 
 This site is an attempt at boiling down some of the Gang of Four nomenclature and to provide simple examples that a reader can extrapolate upon.  In my own original readings of Gang of Four I was constantly confused about the subtleties of one pattern over another.  While Gang of Four is an extremely thorough in analyzing and defining the patterns, I think that c++/smalltalk plus UML diagrams are not necessarily the best way to grok what are extremely valuable tools in the engineers toolbox.
 
-It's important to recognize patterns, whether you agree with them or not, because they are part of our shared professional jargon.  Understanding the nuances between a decorator and an adapter means you can communicate more clearly to your peers.  That said, I don't want to encourage anyone to fall into the classical `AbstractFactoryAbstractFactoryFactoryBean` joke.  
+It's important to recognize patterns, whether you agree with them or not, because they are part of our shared professional jargon.  Understanding the nuances between a decorator and an adapter means you can communicate more clearly to your peers.  That said, I don't want to encourage anyone to fall into the classical [`AbstractSingletonProxyFactoryBean`](http://docs.spring.io/spring/docs/2.5.x/javadoc-api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html) joke.  
 
-In the end, like with all tools, patterns are there to help you go fast, go correct, and go forth where no engineer has gone before.  
+In the end, like with all tools, patterns are there to help you go fast, go correct, and go forth.
