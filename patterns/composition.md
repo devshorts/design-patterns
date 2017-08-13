@@ -7,6 +7,6 @@ permalink: /patterns/composition
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-Lets talk about composition
+Lets talk about composition (over inheritance)
 
 ![](https://media.giphy.com/media/aXbSfDEuF8XFm/giphy.gif)
