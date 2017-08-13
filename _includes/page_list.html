@@ -1,0 +1,8 @@
+<div class="page_list">
+    {% for page in site.pages %}
+    <div class="item">
+        <a href="{{page.url}}"><h3>{{page.title}}</h3></a>
+        <p>{{page.description}}</p>
+    </div>
+    {% endfor %}
+</div>
