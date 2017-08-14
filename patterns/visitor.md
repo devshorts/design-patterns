@@ -210,6 +210,11 @@ matchLang(language)
 
 But we're not really relying on dispatching here, under the hood this is akin to doing instanceOf checks on items.  On top of that, if we don't specifically close the interface tree with a sealed trait AND we don't enable warnings as errors, then it is possible for us to add new items to the node tree and forget to implement visitor overloads for it.  However, with a visitor pattern when we add new types we MUST implement the visit method which is a great compile time safety net.
 
+That said, visitors have other problems.  The biggest one is that in order to _return a result_ they tend to mutate themselves. This is because if we wanted to be able to return a result, we have to tell the visitor it can return a result, and all the visito methods must also return that type. This means that we can't have generic visitors that do _anything_. That said, you can totally make your visitor return a type if you are sure the type will always be returned.
+
+
+
+
 ---
 
 [1] [Double Dispatch is a Code Smell](https://lostechies.com/derekgreer/2010/04/19/double-dispatch-is-a-code-smell/)

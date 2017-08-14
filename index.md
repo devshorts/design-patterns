@@ -12,4 +12,6 @@ This site is an attempt at boiling down some of the Gang of Four nomenclature an
 
 It's important to recognize patterns, whether you agree with them or not, because they are part of our shared professional jargon.  Understanding the nuances between a decorator and an adapter means you can communicate more clearly to your peers.  That said, I don't want to encourage anyone to fall into the classical [`AbstractSingletonProxyFactoryBean`](http://docs.spring.io/spring/docs/2.5.x/javadoc-api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html) joke.  
 
+These design patterns tend to be simple and concise. However, no matter what the pattern is the most common thread among all of them is _code to the contract_.  This means working at abstractions where you don't care what the implementation is.  This is the biggest challenge I think that engineers just getting started face and when they overcome this hurdle their code tends to become cleaner, shorter, and less error prone.    
+
 In the end, like with all tools, patterns are there to help you go fast, go correct, and go forth.
