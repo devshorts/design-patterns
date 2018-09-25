@@ -138,4 +138,4 @@ class FancyHouseFactory extends HouseFactory {
 }
 ```
 
-Oh man, faaaancy.  We can now pass around a `HouseFactory` trait and they'll all get fancy houses now.  If we want to make a `CrappyHouseFactory` we could do that too.  Once we have all these factories, we can apply things like [Strategies]({{ site.baseurl }}{% link patterns/strategy.md %}) to choose with factory to use.  
+Oh man, faaaancy.  We can now pass around a `HouseFactory` trait and they'll all get fancy houses now.  If we want to make a `CrappyHouseFactory` we could do that too.  Once we have all these factories, we can apply things like [Strategies]({{ site.baseurl }}{% link _patterns/strategy.md %}) to choose with factory to use.  

@@ -21,6 +21,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  devshorts
 permalink: /:title/
 
+collections:
+  patterns:
+    output: true
+    permalink: /patterns/:name
+
 # Build settings
 markdown: kramdown
 theme: minima

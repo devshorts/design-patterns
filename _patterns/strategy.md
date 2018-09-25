@@ -122,5 +122,5 @@ I often times ask an interview question for candindates to design pacman. One th
 - A* (tracking pacman and trying to find the least distance to them)
 - AI (predict pacmans movements based on past movements)
 
-If you abstract how the ghosts look for pacman, you can build a ghost class that is _pluggable_ with how it finds pacman. This means instead of having 10 ghost (sub)classes that each handle how movement occurs, you can have 1 class who is given a strategy.  This also is a great example of [composition]({{ site.baseurl }}{% link patterns/composition.md %}).
+If you abstract how the ghosts look for pacman, you can build a ghost class that is _pluggable_ with how it finds pacman. This means instead of having 10 ghost (sub)classes that each handle how movement occurs, you can have 1 class who is given a strategy.  This also is a great example of [composition]({{ site.baseurl }}{% link _patterns/composition.md %}).
 
