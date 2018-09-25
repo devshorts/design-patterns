@@ -1,9 +1,9 @@
 <div class="page_list">
-    <h2>Patterns</h2>
+    <hr/>
     {% for page in site.patterns %}
     <div class="item">
-        <a href="{{page.url | prepend:site.baseurl}}"><h3>{{page.title}}</h3></a>
-        <p>{{page.description}}</p>
+        <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{page.url | prepend:site.baseurl}}">{{page.title}}</a>
     </div>
     {% endfor %}
+    <hr/>
 </div>

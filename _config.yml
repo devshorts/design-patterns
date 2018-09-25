@@ -24,11 +24,13 @@ permalink: /:title/
 collections:
   patterns:
     output: true
-    permalink: /patterns/:name
+    permalink: /patterns/:name/
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-hyde
+plugins: [jekyll-paginate, jekyll-gist]
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
